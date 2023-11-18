@@ -1,7 +1,9 @@
 {% extends 'common.html' %}
 {% load  static %}
 
-    <div class="site-section">
+
+{% block main %}
+ <div class="site-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mb-5">
@@ -16,10 +18,10 @@
               <p>Enim harum voluptatem, itaque in illum quas temporibus tempore sit tempora quam atque eveniet, non aspernatur dignissimos aliquid praesentium exercitationem delectus, maxime velit saepe! Qui asperiores iure reprehenderit ad voluptas!</p>
               <div class="row mb-4">
                 <div class="col-md-6">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
+                  <img src="{% static 'images/img_1.jpg' %}" alt="Image" class="img-fluid rounded">
                 </div>
                 <div class="col-md-6">
-                  <img src="images/img_2.jpg" alt="Image" class="img-fluid rounded">
+                  <img src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-fluid rounded">
                 </div>
               </div>
               <p>Ipsam fuga fugiat vero repudiandae, tenetur a ullam, expedita perspiciatis dolores rem quibusdam numquam dicta sint unde repellat magni recusandae. Id, quibusdam, voluptatum. Amet mollitia ratione, illum animi quia ex?</p>
@@ -45,7 +47,7 @@
 
                 <li class="comment">
                   <div class="vcard bio">
-                    <img src="images/person_1.jpg" alt="Image placeholder">
+                    <img src="{% static 'images/person_1.jpg' %}" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
                     <h3>Jean Doe</h3>
@@ -57,7 +59,7 @@
                   <ul class="children">
                     <li class="comment">
                       <div class="vcard bio">
-                        <img src="images/person_1.jpg" alt="Image placeholder">
+                        <img src="{% static 'images/person_1.jpg' %}" alt="Image placeholder">
                       </div>
                       <div class="comment-body">
                         <h3>Jean Doe</h3>
@@ -70,7 +72,7 @@
                       <ul class="children">
                         <li class="comment">
                           <div class="vcard bio">
-                            <img src="images/person_1.jpg" alt="Image placeholder">
+                            <img src="{%  static 'images/person_1.jpg' %}" alt="Image placeholder">
                           </div>
                           <div class="comment-body">
                             <h3>Jean Doe</h3>
@@ -82,7 +84,7 @@
                             <ul class="children">
                               <li class="comment">
                                 <div class="vcard bio">
-                                  <img src="images/person_1.jpg" alt="Image placeholder">
+                                  <img src="{%  static 'images/person_1.jpg' %}" alt="Image placeholder">
                                 </div>
                                 <div class="comment-body">
                                   <h3>Jean Doe</h3>
@@ -100,7 +102,7 @@
 
                 <li class="comment">
                   <div class="vcard bio">
-                    <img src="images/person_1.jpg" alt="Image placeholder">
+                    <img src="{%  static 'images/person_1.jpg' %}" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
                     <h3>Jean Doe</h3>
@@ -148,7 +150,7 @@
             <div class="mb-5 text-center border rounded course-instructor">
               <h3 class="mb-5 text-black text-uppercase h6 border-bottom pb-3">Course Instructor</h3>
               <div class="mb-4 text-center">
-                <img src="images/person_2.jpg" alt="Image" class="w-25 rounded-circle mb-4">
+                <img src="{% static 'images/person_2.jpg' %}" alt="Image" class="w-25 rounded-circle mb-4">
                 <h3 class="h5 text-black mb-4">Christine Downeyy</h3>
                 <p>Lorem ipsum dolor sit amet sectetur adipisicing elit. Ipsa porro expedita libero pariatur vero eos.</p>
               </div>
@@ -195,7 +197,7 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course.html"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course.html"><img src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$99</span>
@@ -211,7 +213,7 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course.html"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course.html"><img src="{% static 'images/img_3.jpg' %}" alt="Image" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$99</span>
@@ -229,7 +231,7 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course.html"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course.html"><img src="{% static 'images/img_4.jpg' %}" alt="Image" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$20</span>
@@ -245,7 +247,7 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course.html"><img src="images/img_5.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course.html"><img src="{% static 'images/img_5.jpg' %}" alt="Image" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$99</span>
@@ -261,7 +263,7 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course.html"><img src="images/img_6.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course.html"><img src="{% static 'images/img_6.jpg' %}" alt="Image" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$99</span>
@@ -288,3 +290,5 @@
         </div>
       </div>
     </div>
+
+{% endblock %}

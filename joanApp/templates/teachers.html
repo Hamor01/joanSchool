@@ -1,0 +1,79 @@
+{% extends 'common.html' %}
+
+{% load static %}
+
+{% block main %}
+{#       TEACHERS SECTION STARTS HERE ...#}
+
+
+        <div class="site-section" id="teachers-section">
+
+
+      <div class="container">
+
+    <div class="row mb-5 justify-content-center">
+          <div class="col-lg-7 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
+
+              {% for instance in instane %}
+                  <h2 class="section-title">{{ instance.h1}}</h2>
+            <p class="mb-5">instance.para1</p>
+                  {% endfor %}
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="teacher text-center">
+              <img src="{{ instance.image }}" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <div class="py-2">
+
+                  {% for instance in instance %}
+                <h3 class="text-black">{{ instance.h3 }}</h3>
+                <p class="position">{{ instance.para2 }}</p>
+                <p>{{ instance.para3 }}</p>
+                      {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="teacher text-center">
+              <img src="{{ instance.image }}" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <div class="py-2">
+
+                  {% for instance in instance %}
+                <h3 class="text-black">{{ instance.h3 }}</h3>
+                <p class="position">{{ instance.para2 }}</p>
+                <p>{{ instance.para3 }}</p>
+                      {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="teacher text-center">
+              <img src="{{ instance.image }}" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <div class="py-2">
+
+                  {% for instance in instance %}
+                <h3 class="text-black">{{ instance.h3 }}</h3>
+                <p class="position">{{ instance.para2 }}</p>
+                <p>{{ instance.para3 }}</p>
+                      {% endfor %}
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      {#       TEACHER SECTION ENDS HERE ...#}
+
+{% endblock %}
